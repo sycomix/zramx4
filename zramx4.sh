@@ -10,10 +10,10 @@
 ### END INIT INFO
 
 # Adjust the swap size in MB
-SWAP_SIZE=800
+SWAP_SIZE=2048
 
 CPUS=`nproc`
-SIZE=$(( SWAP_SIZE * 1024 * 1024 / CPUS ))
+SIZE=$(( SWAP_SIZE * 2048 * 2048 / CPUS ))
 
 case "$1" in
   "start")
